@@ -1,0 +1,80 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: rgb(240, 240, 240) ;
+}
+.feedback {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.feedback p {
+    text-align: left;
+}
+
+.feedback div.name {
+    text-align: right;
+}
+
+#search form {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    gap: 8px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#promotions .promo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section {
+    margin-bottom: 48px;
+
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    gap:  16px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+}
+nav a {
+    text-decoration: none;
+    padding: 24px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 36px 0; 
+    border-top:  2px solid black;
+}
+
+footer h6 {
+    margin-bottom: 4px;
+}
