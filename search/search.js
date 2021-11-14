@@ -61,6 +61,6 @@ tbody.addEventListener('click', (event) =>{
 
    window.localStorage.setItem('chosenTrip', JSON.stringify(trip)) // передаем данные из "формы" выбора тура, чтобы отобразить
   // window.location.href="seat.html"; 
-  window.open("/seat.html"); // в новом окне
+  window.open("/zones"); // в новом окне
 })
 
