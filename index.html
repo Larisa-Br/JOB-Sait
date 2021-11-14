@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css">
     <title>Турист-pro</title>
   </head>
 
@@ -11,7 +12,7 @@
     <header>
       <div class="logo">
         <img src="https://via.placeholder.com/150x50" alt="Лого" />
-        <h1>Турист-pro</h1>
+        <h1><a href="index.html">Турист-pro</a></h1>
       </div>
       <nav>
         <a href="#promotions">Акции</a>
@@ -19,7 +20,7 @@
         <a href="#Booking">Бронирование</a>
       </nav>
     </header>
-    <div class="container">
+    <main class="container">
       <section id="booking">
         <h2>Бронирование</h2>
       </section>
@@ -53,12 +54,12 @@
       </section>
       <section id="search">
         <h2>Поиск</h2>
-        <form action="/search.html">
+        <form action="search.html">  <!--в той же папке-->
           <label for="search-form-region"></label>
           <select name="region" id="search-form-region">
-            <option value="moscow">Москва</option>
-            <option value="spb">Санкт-Петербург</option>
-            <option value="nsk">Новосибирск</option>
+            <option value="Москва">Москва</option>
+            <option value="СПБ">Санкт-Петербург</option>
+            <option value="НСК">Новосибирск</option>
           </select>
           <label for="search-form-start">Начало</label>
           <input type="date" name="start-date" id="search-form-start" />
@@ -116,7 +117,7 @@
           <button type="submit">Подписаться</button>
         </form>
       </section>
-    </div>
+    </main>
     <footer>
       <a href="tel:+78005553310">8 (800) 555-33-10</a>
 

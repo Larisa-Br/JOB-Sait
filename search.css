@@ -1,0 +1,12 @@
+table,
+td {
+    border: 1px solid #ccc;
+}
+
+table {
+    margin: 0 auto;
+}
+
+th {
+    padding: 4px 8px;
+}

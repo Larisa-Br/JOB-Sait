@@ -1,0 +1,29 @@
+.feedback {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.feedback p {
+    text-align: left;
+}
+
+.feedback div.name {
+    text-align: right;
+}
+
+#search form {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    gap: 8px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#promotions .promo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
