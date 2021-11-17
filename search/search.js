@@ -1,4 +1,4 @@
-const trips = [
+/*const trips = [
   {
     id: 0,
     region: "Москва",
@@ -28,7 +28,94 @@ const trips = [
     zones: 5,
   },
 ];
+*/
+const trips = [
+  {
+    id: 0,
+    region: "Москва",
+    name: "Лужники",
+    level: "Легкий",
+    start: "12.07.21",
+    end: "30.07.21",
+    zones: [
+      {
+        id: 0,
+        name: "Обзорная площадка",
+        description: "Очень интересная обзорная площадка",
+        image: "https://via.placeholder.com/150x250"
+      },
+      {
+        id: 1,
+        name: "Главная церковь",
+        description: "Храм построен в ...",
+        image: "https://via.placeholder.com/150x250"
+      },
+      {
+        id: 2,
+        name: "Краеведческий музей",
+        description: "Музей открыт в ...",
+        image: "https://via.placeholder.com/150x250"
+      }
+    ]
+  },
 
+  {
+    id: 2,
+    region: "СПБ",
+    name: "Лужники 1",
+    level: "Легкий",
+    start: "12.07.21",
+    end: "30.07.21",
+    zones: [
+      {
+        id: 0,
+        name: "Обзорная площадка",
+        description: "Очень интересная обзорная площадка",
+        image: "https://via.placeholder.com/150x250"
+      },
+      {
+        id: 1,
+        name: "Главная церковь",
+        description: "Храм построен в ...",
+        image: "https://via.placeholder.com/150x250"
+      },
+      {
+        id: 2,
+        name: "Краеведческий музей",
+        description: "Музей открыт в ...",
+        image: "https://via.placeholder.com/150x250"
+      },
+      {
+        id: 3,
+        name: "Краеведческий музей1",
+        description: "Музей открыт в ...",
+        image: "https://via.placeholder.com/150x250"
+      }
+    ]
+  },
+  {
+    id: 1,
+    region: "НСК",
+    name: "Центральный НСК",
+    level: "Легкий",
+    start: "12.07.21",
+    end: "30.07.21",
+    zones: [
+      {
+        id: 0,
+        name: "Обзорная площадка",
+        description: "Очень интересная обзорная площадка",
+        image: "https://via.placeholder.com/150x250"
+      },
+      {
+        id: 1,
+        name: "Главная церковь",
+        description: "Храм построен в ...",
+        image: "https://via.placeholder.com/150x250"
+      }
+    ]
+  }
+];
 const tbody = document.getElementById("search-results-tbody");
 
 const renderRow = ({ id, region, name, level, start, end, zones }) =>
@@ -39,7 +126,7 @@ const renderRow = ({ id, region, name, level, start, end, zones }) =>
                 <td>${level}</td>
                 <td>${start}</td>
                 <td>${end}</td>
-                <td>${zones}</td>
+                <td>${zones.length}</td>
                 <td><button data-id="${id}" type="button">Выбрать</button></td>
 </tr>
 
